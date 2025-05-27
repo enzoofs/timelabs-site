@@ -66,56 +66,6 @@
             padding: 1rem 0;
         }
         
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .logo-icon::before {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.8);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .logo-icon::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.9);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            border-radius: 1px;
-        }
-        
-        .logo-text {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: var(--primary-color);
-            letter-spacing: -0.02em;
-        }
-        
         .cta-header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
             color: white;
@@ -814,9 +764,8 @@
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo-container">
             <a href="/">
-                <img src="assets/logo.png" alt="Logo TimeLabs" style="height: 40px;">
+                <img src="assets/logo.png" alt="Logo TimeLabs" style="height: 64px;">
             </a>
             </div>
             <a href="#demo" class="cta-header">Demo Grátis</a>
