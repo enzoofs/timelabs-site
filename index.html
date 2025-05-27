@@ -982,13 +982,25 @@
         <div class="container">
             <h2>Pare de desperdiçar tempo e dinheiro</h2>
             <p>Comece sua automação hoje mesmo. Demonstração personalizada em 15 minutos.</p>
-            <form class="cta-form">
-                <input type="text" placeholder="Seu nome completo" class="cta-input" required>
-                <input type="email" placeholder="Email corporativo" class="cta-input" required>
-                <input type="text" placeholder="Nome da empresa" class="cta-input" required>
-                <input type="tel" placeholder="WhatsApp para contato" class="cta-input" required>
-                <button type="submit" class="cta-button">Agendar Demonstração Gratuita</button>
-            </form>
+            <form class="cta-form" action="https://formsubmit.co/enzoferrazbh@gmail.com" method="POST">
+            <!-- Campo honeypot invisível para evitar spam -->
+            <input type="text" name="_honey" style="display:none">
+        
+            <!-- Redireciona para uma página de agradecimento ou para a mesma -->
+            <input type="hidden" name="_next" value="https://timelabs.com.br/obrigado">
+        
+            <!-- Desativa captcha do FormSubmit (opcional) -->
+            <input type="hidden" name="_captcha" value="false">
+        
+            <!-- Campos visíveis -->
+            <input type="text" name="nome" placeholder="Seu nome completo" class="cta-input" required>
+            <input type="email" name="email" placeholder="Email corporativo" class="cta-input" required>
+            <input type="text" name="empresa" placeholder="Nome da empresa" class="cta-input" required>
+            <input type="tel" name="whatsapp" placeholder="WhatsApp para contato" class="cta-input" required>
+            
+            <button type="submit" class="cta-button">Agendar Demonstração Gratuita</button>
+        </form>
+
             <p class="cta-guarantee">✅ Sem compromisso • ✅ Configuração gratuita • ✅ Suporte em português</p>
         </div>
     </section>
