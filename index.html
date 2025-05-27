@@ -48,24 +48,23 @@
         }
         
         /* Header */
-        header {
-            min-height: 64px;
-            background: var(--bg-white);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.2rem 0;
-        }
+            header {
+              background: var(--bg-white);
+              backdrop-filter: blur(10px);
+              border-bottom: 1px solid var(--border-color);
+              position: fixed;
+              width: 100%;
+              top: 0;
+              z-index: 1000;
+            }
+            
+            nav {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              height: 80px; /* define altura fixa para o header */
+              padding: 0 0; /* sem padding vertical que estica a barra */
+            }
         
         .cta-header {
             background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
@@ -766,9 +765,8 @@
     <header>
         <nav class="container">
             <a href="/">
-                <img src="assets/logo.png" alt="Logo TimeLabs" style="height: 90px;">
+                <img src="assets/logo.png" alt="Logo TimeLabs" style="height: 64px;">
             </a>
-            </div>
             <a href="#demo" class="cta-header">Demo Grátis</a>
         </nav>
     </header>
