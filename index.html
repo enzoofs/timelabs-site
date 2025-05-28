@@ -58,6 +58,7 @@
               z-index: 1000;
             }
             
+
             nav {
               display: flex;
               justify-content: space-between;
@@ -67,10 +68,13 @@
             }
             
             .logo-img {
-              height: 72px;
+              height: 90px;
               display: block;
-              position: relative;
-              top: 2px; /* ajuste fino visual */
+              transition: transform 0.3s ease;
+            }
+            
+            .logo-img:hover {
+              transform: scale(1.05);
             }
         
         .cta-header {
